@@ -36,6 +36,141 @@
 
 
 */
+// 3.1、函数的定义
+//es5定义函数的方法
+/*
+ //函数声明法
+     function run(){
+
+         return 'run';
+     }
+ //匿名函数
+     var run2=function(){
+
+         return 'run2';
+     }
+*/
+//ts中定义函数的方法
+//函数声明法
+// function run():string{
+//     return 'run';
+// }
+//错误写法
+// function run():string{
+//     return 123;
+// }
+//匿名函数
+// var fun2=function():number{
+//     return 123;
+// }
+// alert(fun2()); /*调用方法*/
+//ts中定义方法传参
+// function ikki(name:string):void|number{
+//     return 123
+// }
+// ikki('123')
+// function ikki(name:string):void|any{
+//     return 123
+// }
+// ikki('123')
+/*
+    function getInfo(name:string,age:number):string{
+
+            return `${name} --- ${age}`;
+    }
+
+
+    alert(getInfo('zhangsan',20));
+
+*/
+// var getInfo=function(name:string,age:number):string{
+//     return `${name} --- ${age}`;
+// }
+// alert(getInfo('zhangsan',40));
+//没有返回值的方法
+// function run():void{
+//     console.log('run')
+// }
+// run();
+// 3.2、方法可选参数 
+// es5里面方法的实参和行参可以不一样(参数可以不传)，但是ts中必须一样，如果不一样就需要配置可选参数 
+// function ikki(name:string,age?:number):any{
+//     return 123
+// }
+// ikki('123')
+/*
+ function getInfo(name:string,age?:number):string{
+
+         if(age){
+
+             return `${name} --- ${age}`;
+         }else{
+
+             return `${name} ---年龄保密`;
+         }
+
+
+ }
+
+ alert(getInfo('zhangsan'))
+
+ alert(getInfo('zhangsan',123))
+*/
+//注意:可选参数必须配置到参数的最后面
+//错误写法
+/*
+ function getInfo(name?:string,age:number):string{
+
+          if(age){
+
+              return `${name} --- ${age}`;
+          }else{
+
+              return `${name} ---年龄保密`;
+          }
+         
+
+  }
+
+  alert(getInfo('zhangsan'))
+*/
+// 3.3、默认参数 可选参数
+// es5里面没法设置默认参数，es6和ts中都可以设置默认参数
+// function ikki(name:string,age:number=20):any{
+//     return 123
+// }
+// ikki('223')
+/*
+
+        function getInfo(name:string,age:number=20):string{
+
+                    if(age){
+
+                        return `${name} --- ${age}`;
+                    }else{
+
+                        return `${name} ---年龄保密`;
+                    }
+            
+        }
+
+        // alert( getInfo('张三'));
+        alert( getInfo('张三',30));
+*/
+// 3.4、剩余参数
+// function sum(a:number,b:number,c:number,d:number):number{
+//     return a+b+c+d;
+// }
+// alert(sum(1,2,3,4)) ;
+//扩展运算符 接受新参传过来的值（必须在末尾）
+function ikki(a) {
+    var rest = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        rest[_i - 1] = arguments[_i];
+    }
+    return 123;
+}
+ikki(2, 3, 4);
 function getInfo(name, age) {
     if (age) {
         return '我叫：' + name + '我的年龄是' + age;
@@ -52,6 +187,3 @@ function getInfo(name, age) {
 // setTimeout(function(){
 //     alert('run')
 // },1000)
-setTimeout(function () {
-    alert('run');
-}, 1000);

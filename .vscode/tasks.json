@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "typescript",
+			"tsconfig": "04.ts创建对象/tsdemo01/tsconfig.json",
+			"problemMatcher": [
+				"$tsc-watch"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "tsc: 构建 - 04.ts创建对象/tsdemo01/tsconfig.json"
+		}
+	]
+}

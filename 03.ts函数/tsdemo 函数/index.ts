@@ -37,6 +37,7 @@
 */
 
 
+
 // 3.1、函数的定义
 
 
@@ -71,9 +72,6 @@
 
         //     return 123;
         // }
-
-
-
 
 
 
@@ -242,10 +240,10 @@
 
     //扩展运算符 接受新参传过来的值（必须在末尾）
 
-    // function ikki(a:number,...rest:number[]):any{
-    //     return 123
-    // }
-    // ikki(2,3,4)
+    function ikki(a:number,...rest:any[]):any{
+        return 123
+    }
+    ikki(2,3,4)
 
 
         /*
@@ -327,29 +325,18 @@
     // }
     
 
-                // function getInfo(name:string):string;
-
-                // function getInfo(age:number):string;
-
-                // function getInfo(str:any):any{
-
-                //     if(typeof str==='string'){
-
-                //         return '我叫：'+str;
-                //     }else{
-
-                //         return '我的年龄是'+str;
-                //     }
-
-                // }
-
-                // alert(getInfo('张三'));   //正确
-
-
-                // alert(getInfo(20));   //正确
-
-
-                // alert(getInfo(true));    //错误写法
+// function getInfo(name:string):string;
+// function getInfo(age:number):string;
+// function getInfo(str:any):any{
+//     if(typeof str==='string'){
+//         return '我叫：'+str;
+//     }else{
+//         return '我的年龄是'+str;
+//     }
+// }
+// alert(getInfo('张三'));   //正确
+// alert(getInfo(20));   //正确
+// alert(getInfo(true));    //错误写法
 
     
 
@@ -387,11 +374,5 @@
         //     alert('run')
         // },1000)
 
-
-
-        setTimeout(()=>{
-
-            alert('run')
-        },1000)
     
 

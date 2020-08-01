@@ -267,5 +267,5 @@ var Person = /** @class */ (function () {
     };
     return Person;
 }());
-var p = new Person('哈哈哈');
-alert(p.run());
+var po = new Person('哈哈哈');
+alert(po.run());

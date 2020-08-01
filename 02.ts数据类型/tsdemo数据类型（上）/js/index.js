@@ -48,7 +48,7 @@ console.log(flag);
 
 
 */
-var flag = true;
+var flags = true;
 flag = false;
 // 数字类型（number）
 /*

@@ -399,6 +399,6 @@
         }
     }
 
-    var p=new Person('哈哈哈');
+    var po=new Person('哈哈哈');
 
-    alert(p.run());
+    alert(po.run());

@@ -16,6 +16,7 @@
         数字类型（number）
         字符串类型(string)
         数组类型（array）
+        
         元组类型（tuple）
         枚举类型（enum）
         
@@ -25,6 +26,8 @@
         never类型
 
 */
+
+
 
 
 //布尔类型（boolean）
@@ -97,23 +100,24 @@
     // 1.第一种定义数组的方式
 
     
-    
-        var arr:number[]=[11,22,33];
+        
+        // var arr:number[]=[11,22,33];
 
-        console.log(arr);
+        // console.log(arr);
     
 
     //2.第二种定义数组的方式
 
-   
-      
-        var arr2:Array<number>=[11,22,33];
 
-        console.log(arr2)
+        // var arr2:Array<number>=[11,22,33];
+
+        // console.log(arr2)
         
    
 
     //3、第三种
+
+        
 
         var arr3:any[]=['131214',22,true];
 
@@ -157,8 +161,11 @@
                 标识符[=整型常数], 
             } ;     
 
+            
+
  */
 
+ 
             /*
 
                 enum Flag {success=1,error=2};
