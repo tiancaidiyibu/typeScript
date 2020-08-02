@@ -12,6 +12,16 @@
 				"isDefault": true
 			},
 			"label": "tsc: 构建 - 04.ts创建对象/tsdemo01/tsconfig.json"
+		},
+		{
+			"type": "typescript",
+			"tsconfig": "08.实例(封装mysql)/tsdemo/tsconfig.json",
+			"option": "watch",
+			"problemMatcher": [
+				"$tsc-watch"
+			],
+			"group": "build",
+			"label": "tsc: 监视 - 08.实例(封装mysql)/tsdemo/tsconfig.json"
 		}
 	]
 }
