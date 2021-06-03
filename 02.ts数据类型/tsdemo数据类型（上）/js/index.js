@@ -3,15 +3,11 @@
 1、vscode配置自动编译
 
     1.第一步   tsc --inti 生成tsconfig.json   改 "outDir": "./js",
-
-
-    2、第二步 任务 - 运行任务  监视tsconfig.json
-
+    2.第二步 任务 - 运行任务  监视tsconfig.json
 
 2、typeScript中的数据类型
 
     typescript中为了使编写的代码更规范，更有利于维护，增加了类型校验，在typescript中主要给我们提供了以下数据类型
-
 
         布尔类型（boolean）
         数字类型（number）
@@ -34,8 +30,6 @@
 
  写ts代码必须指定类型
 
- 
-
 
 
 var flag:boolean=true;
@@ -48,8 +42,9 @@ console.log(flag);
 
 
 */
-var flags = true;
+var flag = true;
 flag = false;
+var flag1 = false;
 // 数字类型（number）
 /*
     var num:number=123;
@@ -57,8 +52,6 @@ flag = false;
     num=456;
 
     console.log(num);  /正确/
-
-
     num='str';    //错误
     
     */
@@ -80,26 +73,27 @@ console.log(num);
 // var arr = [1,2]
 // 1.第一种定义数组的方式
 /*
-   var arr:number[]=[11,22,33];
+    var arr:number[]=[11,22,33];
 
-   console.log(arr);
+    console.log(arr);
 */
 var arr = [1, 2, 3];
 var arr1 = ['1', '2'];
+var arr2 = [true, false];
+var arr5 = [2, 3, 'easdsa'];
 //2.第二种定义数组的方式
 /*
-
-  var arr:Array<number>=[11,22,33];
-
-  console.log(arr)
-  
+    var arr:Array<number>=[11,22,33];
+    console.log(arr)
 */
-// 元组类型（tuple）  属于数组的一种
+var arr4 = [1, 23];
+// 3.元组类型（tuple）  属于数组的一种
 // var arr:Array<number>=[11,22,33];
 // console.log(arr)
 //元祖类型:可以给数组中每个元素指定类型
 // let arr:[number,string]=[123,'this is ts'];
 var arr3 = [1, { a: 1 }];
+var arr6 = [1, '333'];
 // console.log(arr);
 /*
 

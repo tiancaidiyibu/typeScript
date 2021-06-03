@@ -17,6 +17,7 @@
         数字类型（number）
         字符串类型(string)
         数组类型（array）
+        
         元组类型（tuple）
         枚举类型（enum）
         
@@ -75,11 +76,11 @@ console.log(flag);
 // 数组类型（array）  ts中定义数组有两种方式
 // var arr=['1','2'];  //es5定义数组
 // 1.第一种定义数组的方式
-var arr = [11, 22, 33];
-console.log(arr);
+// var arr:number[]=[11,22,33];
+// console.log(arr);
 //2.第二种定义数组的方式
-var arr2 = [11, 22, 33];
-console.log(arr2);
+// var arr2:Array<number>=[11,22,33];
+// console.log(arr2)
 //3、第三种
 var arr3 = ['131214', 22, true];
 console.log(arr3);
@@ -107,6 +108,8 @@ console.log(arr3);
                 ...
                 标识符[=整型常数],
             } ;
+
+            
 
  */
 /*
@@ -200,6 +203,9 @@ function run():void{
     run();
 
 */
+function fn() {
+    console.log(2);
+}
 function num2() {
     return 123;
 }

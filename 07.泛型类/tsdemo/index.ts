@@ -80,7 +80,7 @@
 // var u = new User()
 // u.username='张三';
 // u.pasword='123456';
-// var db = new MysqlDb
+// var db = new MysqlDb()
 // db.add(u)
 
 

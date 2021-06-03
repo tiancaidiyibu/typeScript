@@ -149,6 +149,12 @@
         // }
         // ikki('123')
 
+        // function ikki1(name:string,age?:number):any|void{
+        //     console.log(`${name}-${age}`)
+        // }
+        // ikki1('hhhh')
+
+
 
 
        /*

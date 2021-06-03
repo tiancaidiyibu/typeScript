@@ -360,6 +360,9 @@ console.log(num)
 
         */
 
+        function fn():void{
+            console.log(2)
+        }
         function num2():any{
             return 123
         }
