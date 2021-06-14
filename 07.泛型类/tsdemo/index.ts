@@ -84,8 +84,6 @@
 // db.add(u)
 
 
-
-
 // 定义泛型类
 // class MysqlDb<T>{
 //     add(user:T):boolean{

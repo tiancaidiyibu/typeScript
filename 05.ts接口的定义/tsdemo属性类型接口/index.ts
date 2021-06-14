@@ -46,8 +46,6 @@
     5.3 可索引接口
     5.4 类类型接口
     5.5 接口扩展
-
-   
 */
 
 
@@ -181,6 +179,8 @@
 // var arr:UserArr = ['23','2e']
 // console.log(arr[1])
 
+
+// 对象的约束(不常用)
 // interface UserObj{
 //     [index:string]:string
 // }

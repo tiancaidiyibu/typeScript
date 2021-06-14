@@ -24,14 +24,12 @@
 //1.1 类装饰器:普通装饰器（无法传参）
     /*
         function logClass(params:any){
-
             console.log(params);
-            // params 就是当前类
+            // params 就是当前类(HttpClient类)
             params.prototype.apiUrl='动态扩展的属性';
             params.prototype.run=function(){
                 console.log('我是一个run方法');
             }
-
         }
 
         @logClass
@@ -43,7 +41,7 @@
             }
         }
         var http:any=new HttpClient();
-        console.log(http.apiUrl);
+        console.log(http.apiUrl); //动态扩展的属性
         http.run();
     */
 
@@ -56,8 +54,8 @@
        /*
         function logClass(params:string){
             return function(target:any){
-                console.log(target);
-                console.log(params);
+                console.log(target); //HttpClient类
+                console.log(params); //参数
                 target.prototype.apiUrl=params;
             }
         }
@@ -140,7 +138,7 @@
 /*
     //类装饰器
         function logClass(params:string){
-            return function(target:any){
+            return function(target:any){ 
                 // console.log(target);
                 // console.log(params);       
                 
@@ -151,8 +149,8 @@
 
         function logProperty(params:any){
             return function(target:any,attr:any){
-                console.log(target);
-                console.log(attr);
+                console.log(target);  //HttpClient类的原型对象
+                console.log(attr); //url
                 target[attr]=params;
             }
         }
@@ -167,7 +165,7 @@
             }
         }
         var http=new HttpClient();
-        http.getData();
+        http.getData(); //http://itying.com
 */
 
 
@@ -185,18 +183,15 @@
 
 */   
     
-
-
-
 /*
 
     //方法装饰器一
 
     function get(params:any){
         return function(target:any,methodName:any,desc:any){
-            console.log(target);
-            console.log(methodName);
-            console.log(desc);
+            console.log(target); //HttpClient.prototype
+            console.log(methodName); //getData
+            console.log(desc); //getData的属性描述对象
             target.apiUrl='xxxx';
             target.run=function(){
                 console.log('run');
